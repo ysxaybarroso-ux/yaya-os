@@ -185,7 +185,15 @@ document.addEventListener("DOMContentLoaded", function () {
         newDiv.innerHTML = `
         <p class="notetittle">${note.idea}</p>
         <p class="notedate">${note.date}</p>
-    `;
+        <button class="delete_button"><img src="../../images/trashcan.png" width="20" height="20"></button>
+        `;
+        var deleteBtn = newDiv.querySelector(".delete_button");
+        deleteBtn.addEventListener("click", (e) => { 
+            e.stopPropagation();
+            content.splice(index,1);
+            SaveNotes();
+            RefreshSidebar();
+        })
 
         newDiv.addEventListener("click", function () {
             setNoteContent(index);
@@ -193,12 +201,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
         sidebar.appendChild(newDiv);
     }
-
+    LoadNotes();
     for (let i = 0; i < content.length; i++) {
         addToSideBar(i);
     }
 
     setNoteContent(0);
+    //sauvgarde les notes pour le client
+    function SaveNotes(){
+    var texte = JSON.stringify(content);
+
+    localStorage.setItem("notes" , texte);
+    }
+
+    function LoadNotes(){
+    var texte = localStorage.getItem("notes");
+
+    if (texte !== null){
+        content = JSON.parse(texte);
+    }
+    }
+    function AddNotes(){
+        var titleInput = document.querySelector("#newNoteTitle");
+        var contentInput = document.querySelector("#newNoteContent");
+
+        var newNote = {
+
+            idea: titleInput.value,
+            date: new Date().toLocaleString(),
+            content: `<p class="notecontent">${contentInput.value}</p>`,
+        }
+
+        content.push(newNote);
+
+        var newIndex = content.length - 1;
+
+        addToSideBar(newIndex);
+        SaveNotes();
+
+        titleInput.value = "";
+        contentInput.value = "";
+    }
+    // if i delete a note the whole side bar as to be refresh
+    function RefreshSidebar(){
+        var sideBar = document.querySelector("#sidebar")
+        sideBar.innerHTML = "";
+
+        for (let i = 0; i < content.length; i++) {
+        addToSideBar(i);
+    }
+    }
+
+    //met un listener sur le btn submit
+    document.querySelector("#addNoteBtn").addEventListener("click", () => {
+        AddNotes();
+        });
+
+
 
 
 

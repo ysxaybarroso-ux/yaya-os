@@ -124,19 +124,24 @@
     <div id="wiki" class="window wiki_window">
         <div id="wikiheader" class="windowheader">
             <div id="wikiclose" class="closebutton"><div class="closebuttonin">QUIT</div></div>
-                <div class="wrapper">
-                    <p class="tittle">HEY CHOOM! WHAT'S NEW</p>
-                </div>
-                <div class="header_space"></div>
+            <div class="wrapper">
+                <p class="tittle">HEY CHOOM! WHAT'S NEW</p>
             </div>
-            <div class="content_win">
-                <h1 class="intro">here you can write down a note or read one</h1>
-                <div style="display:flex; flex-direction:row;">
-                    <div id="sidebar" style="width:120px; overflow-y:auto;"></div>
-                    <div id="notezone" style="flex:1 ; padding:8px;"></div>
-                </div>
+            <div class="header_space"></div>
+        </div>
+        <div class="content_win">
+            <h1 class="intro">here you can write down a note or read one</h1>
+            <div style="display:flex; flex-direction:row;">
+                <div id="sidebar" style="width:120px; overflow-y:auto;"></div>
+                <div id="notezone" style="flex:1 ; padding:8px;"></div>
+            </div>
+            <div id="textForm">
+                <input type="text" id="newNoteTitle" placeholder=" Ton Titre">
+                <textarea id="newNoteContent" placeholder="Contenu"></textarea>
+                <button id="addNoteBtn">+ Nouvelle note</button>
             </div>
         </div>
+    </div>
 
 
     <div id="radio" class="window radio_window" >
