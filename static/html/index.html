@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -154,6 +155,7 @@
                 <div id="view" class="view">
                     <div id="song_view" class="song">
                         <div id="repeat_button"><img src="../../images/repeat.png" width="25" height="25"></div>
+                        <div id="indicator_repeat" class="repeat_off"></div>
                         <div id="song_button">
                             <div id="play_button" style="display:none; justify-content:center;"><img src="../../images/play.png" width="50" height="50"></div>
                             <div id="pause_button" style="display:flex; justify-content:center;"><img src="../../images/stop.png" width="50" height="50"></div>
@@ -172,9 +174,25 @@
 
         </div>
     </div>
-    
+
+    <div id="radiosettings" class="window radio_settings_window" >
+        <div id="radiosettingsheader">
+            <div id="radiosettingsclose" class="closebutton"><div class="closebuttonin">QUIT</div></div>
+            <div class="wrapper">
+                <p class="tittle_settings_radio">RADIO SETTINGS</p>
+            </div>
+            <div class="header_space"></div>
+        </div>
+        <div class="content_win">
+            <div id="settings_panel_radio" class="setting_radio">
+                <h1 class="radio_setting_tittle">VOLUME</h1>
+                <input type="range" id="volume_slider" min="0" max="1" step="0.01" value="1">
+                <span id="volume_percentage" class="settings_percentage">100%</span>
+            </div>
+        </div>
+    </div>
 
     </body>
-
+ 
 
 </html>

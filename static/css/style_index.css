@@ -665,3 +665,76 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+.repeat_off{
+    width: 15px;
+    height: 10px;
+    background-color:rgb(255, 25, 148) ;
+    border-radius: 50px;
+}
+.repeat_on{
+    width: 15px;
+    height: 10px;
+    background-color:rgb(147, 213, 33) ;
+    border-radius: 50px;
+}
+.setting_radio{
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    top :50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-image-source: url('../../images/red_box2.png');
+    border-image-slice: 40 40 40 40 ;
+    border-image-repeat: stretch; 
+    border-style: solid;
+    border-width: 20px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.767);
+    z-index: 0;
+}
+.radio_setting_tittle{
+    color:red;
+    font-family:'cyberpunk';
+    text-decoration: overline;
+    text-decoration-color:orange ;
+}
+.radio_settings_window{
+    display:none;
+    flex-direction: column;
+    width:350px;
+    height:400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-image-source: url('../../images/red_box1.png');
+    border-image-slice: 40 40 40 40 ;
+    border-image-repeat: stretch; 
+    border-style: solid;
+    border-width: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+
+}
+.tittle_settings_radio{
+    font-family:'cyberpunk';
+    color:rgb(255, 0, 0);
+    justify-content:center;
+    display:flex;
+    text-align: center;
+    font-size:20px;
+    width:fit-content;
+    padding: 0;
+    background-color: rgb(253, 176, 21);
+    border-radius:5px ;
+
+}
+.settings_percentage{
+    color:rgb(222, 255, 5);
+    font-family:'cyberpunk';
+    text-decoration:solid;
+    text-decoration-color:orange ;
+}
