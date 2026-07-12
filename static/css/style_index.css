@@ -99,8 +99,8 @@ html, body {
     src: url('../fonts/Rabotnik.ttf') format('truetype');
 }
 @font-face {
-    font-family: cyberpunk_2;
-    src: url(../fontS/Sddystopiandemo-GO7xa.otf) format('opentype');
+    font-family: 'cyberpunk_2';
+    src: url(../fonts/Sddystopiandemo-GO7xa.otf) format('opentype');
 }
 body{
     background-color: rgb(255, 255, 255);
