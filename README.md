@@ -6,6 +6,6 @@ then there's a note app not that runnable (because if you want to write note you
 THERE'S IS... a music app(if you have recommandation to add some no copyright song i'm open)
 all of the os i made to have a cybrepunk vibes 
 
-the demo is here https://github.com/ysxaybarroso-ux/yaya-os/static/html/index.html
+the demo is here !!! https://ysxaybarroso-ux.github.io/yaya-os/static/html/index.html
 
 p.s my fav playlist is the jazz one or beach vides bcs it's summer!! 
