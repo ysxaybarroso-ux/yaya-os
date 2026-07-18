@@ -1,6 +1,6 @@
 # yaya-os
 creating my OS  fisrt time!!
-i'm very new to coding world so hey ( sorry : hello world!.... [yes better like that)
+i'm very new to coding world... so hey...     ( sorry : hello world!.... [yes better like that)
 =======================================================================================================================
 the theme of this OS is CYBERPUNK HELL YEAHH!!!
 =========================================================================================================================
